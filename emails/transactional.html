@@ -9,206 +9,39 @@ preheader: Transactional email template
       <tr>
         <td class="w-[552px] max-w-full">
           <x-spacer height="24px" />
-
           <table class="w-full">
             <tr>
               <td
                 class="py-6 px-9 sm:p-6 bg-white [border:1px_solid_theme(colors.slate.200)] rounded-lg"
               >
-                <a
-                  href="https://diavaia.08880.org"
-                  class="flex items-center justify-center mb-10 mt-4"
-                  target="_blank"
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
                 >
-                  <img
-                    src="logo.png"
-                    src-production="images/logo.png"
-                    width="70"
-                    alt="Diavaia"
-                    class="h-auto w-[150px]"
-                  />
-                </a>
+                  <tr>
+                    <td align="center">
+                      <a href="https://diavaia.08880.org" target="_blank">
+                        <img
+                          src="logo.png"
+                          src-production="images/logo.png"
+                          width="150"
+                          alt="Diavaia"
+                          style="
+                            display: block;
+                            margin: 16px auto 40px;
+                            height: auto;
+                          "
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
                 <div class="p-4 bg-gray-200 rounded-[6px]">
                   <p class="text-black font-bold uppercase text-center">
                     Thank you for your order, Hilman
                   </p>
-                  <!-- <div
-                    class="relative flex items-start justify-evenly overflow-x-hidden"
-                  >
-                    <div
-                      class="absolute w-[80%] top-[20px] h-[1px] left-10 bg-black z-0"
-                    ></div>
-                    <div
-                      class="w-full flex flex-col gap-1 relative z-10 items-center"
-                    >
-                      <div
-                        class="size-10 rounded-full bg-[#302952] flex items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="none"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M11 22c-.818 0-1.6-.33-3.163-.99C3.946 19.366 2 18.543 2 17.16V7m9 15V11.355M11 22c.34 0 .646-.057 1-.172M20 7v4.5M7.326 9.691L4.405 8.278C2.802 7.502 2 7.114 2 6.5s.802-1.002 2.405-1.778l2.92-1.413C9.13 2.436 10.03 2 11 2s1.871.436 3.674 1.309l2.921 1.413C19.198 5.498 20 5.886 20 6.5s-.802 1.002-2.405 1.778l-2.92 1.413C12.87 10.564 11.97 11 11 11s-1.871-.436-3.674-1.309M5 12l2 1m9-9L6 9m14.132 11.159L22 22m-.793-4.404a3.6 3.6 0 0 1-3.603 3.597A3.6 3.6 0 0 1 14 17.596A3.6 3.6 0 0 1 17.604 14a3.6 3.6 0 0 1 3.603 3.596"
-                          />
-                        </svg>
-                      </div>
-                      <p class="text-black text-center my-0">
-                        Securing Your Order
-                      </p>
-                    </div>
-                    <div
-                      class="w-full flex flex-col gap-1 relative z-10 items-center"
-                    >
-                      <div
-                        class="size-10 rounded-full bg-[#0E793C] flex items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="none"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M11 22c-.818 0-1.6-.33-3.163-.99C3.946 19.366 2 18.543 2 17.16V7m9 15V11.355M11 22c.725 0 1.293-.26 2.5-.777M20 7v4m-5 6.5h7M18.5 21v-7M7.326 9.691L4.405 8.278C2.802 7.502 2 7.114 2 6.5s.802-1.002 2.405-1.778l2.92-1.413C9.13 2.436 10.03 2 11 2s1.871.436 3.674 1.309l2.921 1.413C19.198 5.498 20 5.886 20 6.5s-.802 1.002-2.405 1.778l-2.92 1.413C12.87 10.564 11.97 11 11 11s-1.871-.436-3.674-1.309M5 12l2 1m9-9L6 9"
-                          />
-                        </svg>
-                      </div>
-                      <p class="text-black text-center my-0">Order Confirmed</p>
-                    </div>
-                    <div
-                      class="w-full flex flex-col gap-1 relative z-10 items-center"
-                    >
-                      <div
-                        class="size-10 rounded-full bg-[#52525B] flex items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="none"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M2 20h16M3.825 12.166c-.275-.2-.525-.45-.825-1.325c-.081-.217-.389-1.305-.65-2.3c-.22-.84-.417-1.605-.325-1.8c.075-.2.175-.35.5-.55c.2-.123 1.225-.375 1.425-.425s.475-.075.7 0c.425.075 1.3 1.35 1.525 1.5c.1.1.425.391.8.425c.275.025.55-.05.85-.175c.275-.114 5.7-2.75 6.2-2.975c4.075-1.7 7.035 1.095 7.485 1.695c.465.58.565.755.44 1.255c-.162.525-.6.625-.85.7s-3.7 1-5.05 1.375c-.295.096-.439.289-.475.325c-.175.25-.97 1.95-1.195 2.325c-.155.4-.58.9-1.13 1.1c-.575.2-1.575.425-1.8.5s-.75.225-.925.175c-.225-.05-.44-.275-.34-.625s.29-1.325.315-1.475s.275-.775 0-.8c-.05-.075-.575.15-1.35.325c-.576.162-1.179.323-1.6.425c-1.625.475-2.505.6-2.7.6c-.375 0-.65-.05-1.025-.275"
-                          />
-                        </svg>
-                      </div>
-                      <p class="text-black text-center my-0">
-                        Order In Transit
-                      </p>
-                    </div>
-                    <div
-                      class="w-full flex flex-col gap-1 relative z-10 items-center"
-                    >
-                      <div
-                        class="size-10 rounded-full bg-[#52525B] flex items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <g
-                            fill="none"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                          >
-                            <path
-                              d="M12 2H6c-2.482 0-3 .518-3 3v17h12V5c0-2.482-.518-3-3-3m6 6h-3v14h6V11c0-2.482-.518-3-3-3M8 6h2M8 9h2m-2 3h2"
-                            />
-                            <path
-                              d="M11.5 22v-4c0-.943 0-1.414-.293-1.707S10.443 16 9.5 16h-1c-.943 0-1.414 0-1.707.293S6.5 17.057 6.5 18v4"
-                            />
-                          </g>
-                        </svg>
-                      </div>
-                      <p class="text-black text-center my-0">
-                        Arrived At Our Office
-                      </p>
-                    </div>
-                    <div
-                      class="w-full flex flex-col gap-1 relative z-10 items-center"
-                    >
-                      <div
-                        class="size-10 rounded-full bg-[#52525B] flex items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <g
-                            fill="none"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                          >
-                            <path
-                              d="M19.5 17.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m-10 0a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0"
-                            />
-                            <path
-                              d="M14.5 17.5h-5M2 4h10c1.414 0 2.121 0 2.56.44C15 4.878 15 5.585 15 7v8.5m.5-9h1.801c.83 0 1.245 0 1.589.195c.344.194.557.55.984 1.262l1.699 2.83c.212.354.318.532.373.728c.054.197.054.403.054.816V15c0 .935 0 1.402-.201 1.75a1.5 1.5 0 0 1-.549.549c-.348.201-.815.201-1.75.201M2 13v2c0 .935 0 1.402.201 1.75a1.5 1.5 0 0 0 .549.549c.348.201.815.201 1.75.201M2 7h6m-6 3h4"
-                            />
-                          </g>
-                        </svg>
-                      </div>
-                      <p class="text-black text-center my-0">
-                        On Its Way To You
-                      </p>
-                    </div>
-                    <div
-                      class="w-full flex flex-col gap-1 relative z-10 items-center"
-                    >
-                      <div
-                        class="size-10 rounded-full bg-[#52525B] flex items-center justify-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <g
-                            fill="none"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                          >
-                            <path
-                              d="M21 7v5M3 7v10.161c0 1.383 1.946 2.205 5.837 3.848C10.4 21.67 11.182 22 12 22V11.355M15 19s.875 0 1.75 2c0 0 2.78-5 5.25-6"
-                            />
-                            <path
-                              d="M8.326 9.691L5.405 8.278C3.802 7.502 3 7.114 3 6.5s.802-1.002 2.405-1.778l2.92-1.413C10.13 2.436 11.03 2 12 2s1.871.436 3.674 1.309l2.921 1.413C20.198 5.498 21 5.886 21 6.5s-.802 1.002-2.405 1.778l-2.92 1.413C13.87 10.564 12.97 11 12 11s-1.871-.436-3.674-1.309M6 12l2 1m9-9L7 9"
-                            />
-                          </g>
-                        </svg>
-                      </div>
-                      <p class="text-black text-center my-0">Order Delivered</p>
-                    </div>
-                  </div> -->
                   <div class="mt-2">
                     <div class="">
                       <p class="text-black uppercase text-center my-0">
@@ -286,14 +119,14 @@ preheader: Transactional email template
                     </tr>
                   </table>
                 </div>
-                <div class="text-center my-20">
+                <div class="text-center my-14">
                   <table class="mx-auto">
                     <tr>
                       <td class="px-4">
                         <a
                           href="#"
                           target="_blank"
-                          class="bg-[#302952] p-4 uppercase no-underline text-white rounded-[6px] inline-block"
+                          class="bg-[#302952] p-3 uppercase no-underline text-white rounded-[6px] inline-block"
                         >
                           View Order Details
                         </a>
@@ -302,7 +135,7 @@ preheader: Transactional email template
                         <a
                           href="#"
                           target="_blank"
-                          class="bg-[#302952] p-4 uppercase no-underline text-white rounded-[6px] inline-block"
+                          class="bg-[#302952] p-3 uppercase no-underline text-white rounded-[6px] inline-block"
                         >
                           Track your order
                         </a>
