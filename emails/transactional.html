@@ -1,0 +1,569 @@
+---
+bodyClass: bg-slate-50
+preheader: Transactional email template
+---
+
+<x-main>
+  <div class="bg-slate-50 sm:px-4 font-inter">
+    <table align="center" class="m-0 mx-auto">
+      <tr>
+        <td class="w-[552px] max-w-full">
+          <x-spacer height="24px" />
+
+          <table class="w-full">
+            <tr>
+              <td
+                class="py-6 px-9 sm:p-6 bg-white [border:1px_solid_theme(colors.slate.200)] rounded-lg"
+              >
+                <a
+                  href="https://diavaia.08880.org"
+                  class="flex items-center justify-center mb-10 mt-4"
+                  target="_blank"
+                >
+                  <img
+                    src="logo.png"
+                    src-production="images/logo.png"
+                    width="70"
+                    alt="Diavaia"
+                    class="h-auto w-[150px]"
+                  />
+                </a>
+                <div class="p-4 bg-gray-200 rounded-[6px]">
+                  <p class="text-black font-bold uppercase text-center">
+                    Thank you for your order, Hilman
+                  </p>
+                  <!-- <div
+                    class="relative flex items-start justify-evenly overflow-x-hidden"
+                  >
+                    <div
+                      class="absolute w-[80%] top-[20px] h-[1px] left-10 bg-black z-0"
+                    ></div>
+                    <div
+                      class="w-full flex flex-col gap-1 relative z-10 items-center"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-[#302952] flex items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M11 22c-.818 0-1.6-.33-3.163-.99C3.946 19.366 2 18.543 2 17.16V7m9 15V11.355M11 22c.34 0 .646-.057 1-.172M20 7v4.5M7.326 9.691L4.405 8.278C2.802 7.502 2 7.114 2 6.5s.802-1.002 2.405-1.778l2.92-1.413C9.13 2.436 10.03 2 11 2s1.871.436 3.674 1.309l2.921 1.413C19.198 5.498 20 5.886 20 6.5s-.802 1.002-2.405 1.778l-2.92 1.413C12.87 10.564 11.97 11 11 11s-1.871-.436-3.674-1.309M5 12l2 1m9-9L6 9m14.132 11.159L22 22m-.793-4.404a3.6 3.6 0 0 1-3.603 3.597A3.6 3.6 0 0 1 14 17.596A3.6 3.6 0 0 1 17.604 14a3.6 3.6 0 0 1 3.603 3.596"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-black text-center my-0">
+                        Securing Your Order
+                      </p>
+                    </div>
+                    <div
+                      class="w-full flex flex-col gap-1 relative z-10 items-center"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-[#0E793C] flex items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M11 22c-.818 0-1.6-.33-3.163-.99C3.946 19.366 2 18.543 2 17.16V7m9 15V11.355M11 22c.725 0 1.293-.26 2.5-.777M20 7v4m-5 6.5h7M18.5 21v-7M7.326 9.691L4.405 8.278C2.802 7.502 2 7.114 2 6.5s.802-1.002 2.405-1.778l2.92-1.413C9.13 2.436 10.03 2 11 2s1.871.436 3.674 1.309l2.921 1.413C19.198 5.498 20 5.886 20 6.5s-.802 1.002-2.405 1.778l-2.92 1.413C12.87 10.564 11.97 11 11 11s-1.871-.436-3.674-1.309M5 12l2 1m9-9L6 9"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-black text-center my-0">Order Confirmed</p>
+                    </div>
+                    <div
+                      class="w-full flex flex-col gap-1 relative z-10 items-center"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-[#52525B] flex items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M2 20h16M3.825 12.166c-.275-.2-.525-.45-.825-1.325c-.081-.217-.389-1.305-.65-2.3c-.22-.84-.417-1.605-.325-1.8c.075-.2.175-.35.5-.55c.2-.123 1.225-.375 1.425-.425s.475-.075.7 0c.425.075 1.3 1.35 1.525 1.5c.1.1.425.391.8.425c.275.025.55-.05.85-.175c.275-.114 5.7-2.75 6.2-2.975c4.075-1.7 7.035 1.095 7.485 1.695c.465.58.565.755.44 1.255c-.162.525-.6.625-.85.7s-3.7 1-5.05 1.375c-.295.096-.439.289-.475.325c-.175.25-.97 1.95-1.195 2.325c-.155.4-.58.9-1.13 1.1c-.575.2-1.575.425-1.8.5s-.75.225-.925.175c-.225-.05-.44-.275-.34-.625s.29-1.325.315-1.475s.275-.775 0-.8c-.05-.075-.575.15-1.35.325c-.576.162-1.179.323-1.6.425c-1.625.475-2.505.6-2.7.6c-.375 0-.65-.05-1.025-.275"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-black text-center my-0">
+                        Order In Transit
+                      </p>
+                    </div>
+                    <div
+                      class="w-full flex flex-col gap-1 relative z-10 items-center"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-[#52525B] flex items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                          >
+                            <path
+                              d="M12 2H6c-2.482 0-3 .518-3 3v17h12V5c0-2.482-.518-3-3-3m6 6h-3v14h6V11c0-2.482-.518-3-3-3M8 6h2M8 9h2m-2 3h2"
+                            />
+                            <path
+                              d="M11.5 22v-4c0-.943 0-1.414-.293-1.707S10.443 16 9.5 16h-1c-.943 0-1.414 0-1.707.293S6.5 17.057 6.5 18v4"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <p class="text-black text-center my-0">
+                        Arrived At Our Office
+                      </p>
+                    </div>
+                    <div
+                      class="w-full flex flex-col gap-1 relative z-10 items-center"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-[#52525B] flex items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                          >
+                            <path
+                              d="M19.5 17.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m-10 0a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0"
+                            />
+                            <path
+                              d="M14.5 17.5h-5M2 4h10c1.414 0 2.121 0 2.56.44C15 4.878 15 5.585 15 7v8.5m.5-9h1.801c.83 0 1.245 0 1.589.195c.344.194.557.55.984 1.262l1.699 2.83c.212.354.318.532.373.728c.054.197.054.403.054.816V15c0 .935 0 1.402-.201 1.75a1.5 1.5 0 0 1-.549.549c-.348.201-.815.201-1.75.201M2 13v2c0 .935 0 1.402.201 1.75a1.5 1.5 0 0 0 .549.549c.348.201.815.201 1.75.201M2 7h6m-6 3h4"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <p class="text-black text-center my-0">
+                        On Its Way To You
+                      </p>
+                    </div>
+                    <div
+                      class="w-full flex flex-col gap-1 relative z-10 items-center"
+                    >
+                      <div
+                        class="size-10 rounded-full bg-[#52525B] flex items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                          >
+                            <path
+                              d="M21 7v5M3 7v10.161c0 1.383 1.946 2.205 5.837 3.848C10.4 21.67 11.182 22 12 22V11.355M15 19s.875 0 1.75 2c0 0 2.78-5 5.25-6"
+                            />
+                            <path
+                              d="M8.326 9.691L5.405 8.278C3.802 7.502 3 7.114 3 6.5s.802-1.002 2.405-1.778l2.92-1.413C10.13 2.436 11.03 2 12 2s1.871.436 3.674 1.309l2.921 1.413C20.198 5.498 21 5.886 21 6.5s-.802 1.002-2.405 1.778l-2.92 1.413C13.87 10.564 12.97 11 12 11s-1.871-.436-3.674-1.309M6 12l2 1m9-9L7 9"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <p class="text-black text-center my-0">Order Delivered</p>
+                    </div>
+                  </div> -->
+                  <div class="mt-2">
+                    <div class="">
+                      <p class="text-black uppercase text-center my-0">
+                        Package Dimensions - (10 x 10 x 10 cm) or (4 x 4 x 4 in)
+                      </p>
+                      <p class="text-black uppercase text-center my-0">
+                        Package Weight - 800 grams or 1.76 lbs
+                      </p>
+                    </div>
+                    <div class="my-3">
+                      <p class="text-black uppercase text-center my-0">
+                        Signature - Direct
+                      </p>
+                      <p class="text-black uppercase text-center my-0">
+                        Insurance - No
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex"></div>
+                <x-spacer height="24px" />
+                <div class="flex flex-col gap-5 mt-6 pl-2">
+                  <div class="flex items-start gap-20">
+                    <div class="flex flex-col gap-1 w-[200px]">
+                      <p class="text-black font-bold my-0">Order Number:</p>
+                      <p class="text-black my-0">12345666</p>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                      <p class="text-black font-bold my-0">Order Date:</p>
+                      <p class="text-black my-0">10/02/2025</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-20">
+                    <div class="flex flex-col gap-1 w-[200px]">
+                      <p class="text-black font-bold my-0">Payment Type:</p>
+                      <p class="text-black my-0">American Express xxx1109</p>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                      <p class="text-black font-bold my-0">
+                        Scheduled Delivery Date:
+                      </p>
+                      <p class="text-black my-0">10/08/2025</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-20">
+                    <div class="flex flex-col gap-1 w-[200px]">
+                      <p class="text-black font-bold my-0">Shipping Address:</p>
+                      <div class="flex flex-col gap-1">
+                        <p class="text-black my-0">Hilman Revanda</p>
+                        <p class="text-black my-0">600 Montgomery St</p>
+                        <p class="text-black my-0">San Fransisco, CA 94111</p>
+                        <p class="text-black my-0">Canada</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-1 w-[200px]">
+                      <p class="text-black font-bold my-0">Billing Address:</p>
+                      <div class="flex flex-col gap-1">
+                        <p class="text-black my-0">Hilman Revanda</p>
+                        <p class="text-black my-0">600 Montgomery St</p>
+                        <p class="text-black my-0">San Fransisco, CA 94111</p>
+                        <p class="text-black my-0">Canada</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center mx-auto my-14 gap-6"
+                >
+                  <x-button
+                    href="#"
+                    target="_blank"
+                    class="bg-[#302952] p-4 mx-auto uppercase no-underline text-white rounded-[6px]"
+                  >
+                    View Order Details
+                  </x-button>
+                  <x-button
+                    href="#"
+                    target="_blank"
+                    class="bg-[#302952] p-4 mx-auto uppercase no-underline text-white rounded-[6px]"
+                  >
+                    Track your order
+                  </x-button>
+                </div>
+                <div class="flex flex-col gap-5">
+                  <p class="text-black font-bold text-center my-0">
+                    Payment Summary
+                  </p>
+                  <div class="flex flex-col w-full gap-3">
+                    <div
+                      class="flex items-center justify-between w-full pb-2"
+                      style="border-bottom: 1px solid #000"
+                    >
+                      <p class="font-light text-black my-0">ORDER SUBTOTAL</p>
+                      <p class="text-black my-0">$0.00</p>
+                    </div>
+                    <div
+                      class="flex items-center justify-between w-full pb-2"
+                      style="border-bottom: 1px solid #000"
+                    >
+                      <p class="font-light text-black my-0">EXPRESS SHIPPING</p>
+                      <p class="text-black my-0">COMPLEMENTARY</p>
+                    </div>
+                    <div
+                      class="flex items-center justify-between w-full pb-2"
+                      style="border-bottom: 1px solid #000"
+                    >
+                      <p class="font-light text-black my-0">Taxes</p>
+                      <p class="text-black my-0">$0.00</p>
+                    </div>
+                    <div
+                      class="flex items-center justify-between w-full pb-2"
+                      style="border-bottom: 1px solid #000"
+                    >
+                      <p class="font-light text-black my-0">Duties</p>
+                      <p class="text-black my-0">$0.00</p>
+                    </div>
+                    <div class="flex items-center justify-between w-full pb-2">
+                      <p class="font-bold text-black my-0">Order Total</p>
+                      <p class="text-black my-0 font-bold">$0.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-14 flex flex-col gap-5">
+                  <p class="font-bold text-black text-center my-0">Items</p>
+                  <!-- Diamonds -->
+                  <div class="flex gap-8">
+                    <img
+                      src="product.webp"
+                      src-production="images/product.webp"
+                      width="70"
+                      alt="Products"
+                      class="aspect-square h-[150px] w-auto rounded-[6px]"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <p class="text-black font-bold my-0">
+                        Diamond:
+                        <span class="font-normal pl-1"
+                          >4.59 Carat CUSHION BRILLIANT</span
+                        >
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Type:
+                        <span class="font-normal pl-1">Natural Diamond</span>
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Certificate:
+                        <span class="font-normal pl-1">12345678</span>
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Color: <span class="font-normal pl-1">M</span>
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Clarity: <span class="font-normal pl-1">S12</span>
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Price: <span class="font-normal pl-1">$50.00</span>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Jewellery -->
+                  <div class="flex gap-8">
+                    <img
+                      src="jeweleries.png"
+                      src-production="images/jeweleries.png"
+                      width="70"
+                      alt="Products"
+                      class="aspect-square h-[150px] w-auto rounded-[6px]"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <p class="text-black font-bold my-0">
+                        Reference:
+                        <span class="font-normal pl-1"
+                          >Clara Bracelet 7 CTW</span
+                        >
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Metal:
+                        <span class="font-normal pl-1">18k Yellow Gold</span>
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Size:
+                        <span class="font-normal pl-1">6 In.</span>
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Diamond Color: <span class="font-normal pl-1">D-E</span>
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Diamond Clarity:
+                        <span class="font-normal pl-1">VS+</span>
+                      </p>
+                      <p class="text-black font-bold my-0">
+                        Price: <span class="font-normal pl-1">$50.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <x-divider class="bg-black" />
+                <div
+                  class="flex flex-col gap-4 mt-14 items-center justify-center"
+                >
+                  <p class="text-black font-bold">Contact Us</p>
+                  <div
+                    class="flex flex-col gap-[14px] items-center justify-center"
+                  >
+                    <a
+                      href="https://forms.diavaia.com/diavaiainc/form/GeneralConsultation/formperma/-g7VWBnjwXDylm3dHcEX-SUmJnrE3ybDMPi1CWWyj0Y"
+                      target="_blank"
+                      class="bg-[#302952] py-[6px] no-underline text-white w-fit px-4 uppercase leading-7 rounded-[6px]]"
+                    >
+                      BOOK A CONCIERGE APPOINTMENT
+                    </a>
+                    <div class="flex items-center gap-2 max-w-[311px]">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-black"
+                      >
+                        <path
+                          d="M4.74 14.3691L6.694 12.9821C7.22072 12.6032 7.81253 12.3242 8.44 12.1591C9.172 11.9641 9.5 11.5641 9.5 10.7111C9.5 8.54609 14.5 8.31609 14.5 10.7111C14.5 11.5641 14.828 11.9641 15.56 12.1581C16.202 12.3301 16.76 12.5931 17.306 12.9821L19.26 14.3681C20.143 14.9961 20.555 15.2991 20.784 15.7821C21 16.2361 21 16.7681 21 17.8321C21 19.7461 21 20.7031 20.464 21.3161C19.815 22.0591 18.128 21.9961 17.092 21.9961H6.908C5.872 21.9961 4.219 22.0991 3.536 21.3161C3 20.7031 3 19.7461 3 17.8321C3 16.7681 3 16.2361 3.216 15.7821C3.446 15.3001 3.856 14.9961 4.74 14.3681"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M6.96017 3.6975C5.64217 4.0735 4.69417 4.5405 3.82617 5.1045C2.45317 5.9965 1.86417 7.6035 2.02617 9.1545C2.09417 9.8105 2.62117 10.1245 3.23117 9.9545C3.69517 9.8245 4.15917 9.6995 4.62017 9.5635C5.96717 9.1635 6.28417 8.6775 6.47117 7.2985L6.96017 3.6975ZM6.96017 3.6975C10.2192 2.7675 13.7812 2.7675 17.0402 3.6975M17.0402 3.6975C18.3582 4.0735 19.3062 4.5405 20.1742 5.1045C21.5472 5.9965 22.1362 7.6035 21.9742 9.1545C21.9062 9.8105 21.3792 10.1245 20.7692 9.9545C20.3062 9.8245 19.8412 9.6995 19.3802 9.5635C18.0332 9.1635 17.7162 8.6775 17.5292 7.2985L17.0402 3.6975ZM14.0002 16.9995C14.0002 17.5299 13.7895 18.0386 13.4144 18.4137C13.0393 18.7888 12.5306 18.9995 12.0002 18.9995C11.4697 18.9995 10.961 18.7888 10.586 18.4137C10.2109 18.0386 10.0002 17.5299 10.0002 16.9995C10.0002 16.4691 10.2109 15.9604 10.586 15.5853C10.961 15.2102 11.4697 14.9995 12.0002 14.9995C12.5306 14.9995 13.0393 15.2102 13.4144 15.5853C13.7895 15.9604 14.0002 16.4691 14.0002 16.9995Z"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <p class="font-light text-black my-0">USA/CAN</p>
+                      <p class="font-light text-black my-0">+1(844)806-6616</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <svg
+                        width="22"
+                        height="20"
+                        viewBox="0 0 22 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-black"
+                      >
+                        <path
+                          d="M6 6.5L8.942 8.24C10.657 9.254 11.342 9.254 13.058 8.24L16 6.5"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M1.01679 11.4756C1.08179 14.5406 1.11479 16.0736 2.24579 17.2086C3.37679 18.3446 4.95079 18.3836 8.09979 18.4626C10.0398 18.5126 11.9618 18.5126 13.9018 18.4626C17.0508 18.3836 18.6248 18.3446 19.7558 17.2086C20.8868 16.0736 20.9198 14.5406 20.9858 11.4756C21.0058 10.4896 21.0058 9.5096 20.9858 8.5236C20.9198 5.4586 20.8868 3.9256 19.7558 2.7906C18.6248 1.6546 17.0508 1.6156 13.9018 1.5366C11.9681 1.4878 10.0335 1.4878 8.09979 1.5366C4.95079 1.6156 3.37679 1.6546 2.24579 2.7906C1.11479 3.9256 1.08179 5.4586 1.01579 8.5236C0.994737 9.50748 0.995737 10.4917 1.01679 11.4756Z"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <p class="font-light text-black my-0">
+                        SUPPORT@DIAVAIA.COM
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-6">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-black"
+                      >
+                        <path
+                          d="M2.5 12C2.5 7.522 2.5 5.282 3.891 3.891C5.282 2.5 7.521 2.5 12 2.5C16.478 2.5 18.718 2.5 20.109 3.891C21.5 5.282 21.5 7.521 21.5 12C21.5 16.478 21.5 18.718 20.109 20.109C18.718 21.5 16.479 21.5 12 21.5C7.522 21.5 5.282 21.5 3.891 20.109C2.5 18.718 2.5 16.479 2.5 12Z"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M16.927 8.02734H13.982C13.4805 8.02733 12.9994 8.22559 12.6435 8.57888C12.2875 8.93218 12.0857 9.41186 12.082 9.91334L11.996 21.4283M10.082 14.0033H14.885"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-black"
+                      >
+                        <path
+                          d="M1.5 11C1.5 6.522 1.5 4.282 2.891 2.891C4.282 1.5 6.521 1.5 11 1.5C15.478 1.5 17.718 1.5 19.109 2.891C20.5 4.282 20.5 6.521 20.5 11C20.5 15.478 20.5 17.718 19.109 19.109C17.718 20.5 15.479 20.5 11 20.5C6.522 20.5 4.282 20.5 2.891 19.109C1.5 17.718 1.5 15.479 1.5 11Z"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M16.508 5.5H16.498M15.5 11C15.5 12.1935 15.0259 13.3381 14.182 14.182C13.3381 15.0259 12.1935 15.5 11 15.5C9.80653 15.5 8.66193 15.0259 7.81802 14.182C6.97411 13.3381 6.5 12.1935 6.5 11C6.5 9.80653 6.97411 8.66193 7.81802 7.81802C8.66193 6.97411 9.80653 6.5 11 6.5C12.1935 6.5 13.3381 6.97411 14.182 7.81802C15.0259 8.66193 15.5 9.80653 15.5 11Z"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-black"
+                      >
+                        <path
+                          d="M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 12.379 1.28 13.693 1.784 14.888C2.063 15.548 2.202 15.878 2.22 16.128C2.237 16.378 2.163 16.652 2.016 17.201L1 21L4.799 19.984C5.348 19.837 5.622 19.764 5.872 19.78C6.122 19.798 6.452 19.937 7.112 20.216C8.34266 20.7343 9.66465 21.0009 11 21Z"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M7.58817 11.377L8.45917 10.296C8.82617 9.84 9.27917 9.416 9.31617 8.808C9.32417 8.655 9.21617 7.967 9.00117 6.59C8.91617 6.049 8.41017 6 7.97317 6C7.40317 6 7.11817 6 6.83517 6.13C6.47717 6.293 6.11017 6.752 6.02917 7.137C5.96517 7.442 6.01317 7.652 6.10817 8.072C6.51017 9.855 7.45517 11.616 8.91917 13.081C10.3842 14.545 12.1452 15.49 13.9292 15.892C14.3492 15.987 14.5582 16.035 14.8632 15.971C15.2482 15.891 15.7072 15.523 15.8712 15.165C16.0002 14.882 16.0002 14.597 16.0002 14.027C16.0002 13.589 15.9512 13.084 15.4102 12.999C14.0332 12.783 13.3452 12.676 13.1922 12.684C12.5852 12.72 12.1602 13.174 11.7042 13.541L10.6232 14.411"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-black"
+                      >
+                        <path
+                          d="M1.5 11C1.5 6.522 1.5 4.282 2.891 2.891C4.282 1.5 6.521 1.5 11 1.5C15.478 1.5 17.718 1.5 19.109 2.891C20.5 4.282 20.5 6.521 20.5 11C20.5 15.478 20.5 17.718 19.109 19.109C17.718 20.5 15.479 20.5 11 20.5C6.522 20.5 4.282 20.5 2.891 19.109C1.5 17.718 1.5 15.479 1.5 11Z"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M9.53589 10.0075C8.71589 9.89147 6.84589 10.0825 5.92989 11.7775C5.01389 13.4725 5.93689 15.2365 6.51389 15.9065C7.08289 16.5335 8.89189 17.7205 10.8109 16.5615C11.2869 16.2745 11.8799 16.0595 12.5519 13.8145L12.4739 4.98047C12.3439 5.95347 13.4189 8.23547 16.4779 8.50547"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</x-main>
