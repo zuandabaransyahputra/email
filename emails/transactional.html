@@ -230,333 +230,719 @@ preheader: Transactional email template
                 </div>
                 <div class="flex"></div>
                 <x-spacer height="24px" />
-                <div class="flex flex-col gap-5 mt-6 pl-2">
-                  <div class="flex items-start gap-20">
-                    <div class="flex flex-col gap-1 w-[200px]">
-                      <p class="text-black font-bold my-0">Order Number:</p>
-                      <p class="text-black my-0">12345666</p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                      <p class="text-black font-bold my-0">Order Date:</p>
-                      <p class="text-black my-0">10/02/2025</p>
-                    </div>
-                  </div>
-                  <div class="flex items-start gap-20">
-                    <div class="flex flex-col gap-1 w-[200px]">
-                      <p class="text-black font-bold my-0">Payment Type:</p>
-                      <p class="text-black my-0">American Express xxx1109</p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                      <p class="text-black font-bold my-0">
-                        Scheduled Delivery Date:
-                      </p>
-                      <p class="text-black my-0">10/08/2025</p>
-                    </div>
-                  </div>
-                  <div class="flex items-start gap-20">
-                    <div class="flex flex-col gap-1 w-[200px]">
-                      <p class="text-black font-bold my-0">Shipping Address:</p>
-                      <div class="flex flex-col gap-1">
+                <div class="mt-6 pl-2">
+                  <table class="w-full">
+                    <tr>
+                      <td class="w-7/12">
+                        <p class="text-black font-bold my-0 mb-1">
+                          Order Number:
+                        </p>
+                        <p class="text-black my-0">12345666</p>
+                      </td>
+                      <td class="w-5/12">
+                        <p class="text-black font-bold my-0 mb-1">
+                          Order Date:
+                        </p>
+                        <p class="text-black my-0">10/02/2025</p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="w-full mt-3">
+                    <tr>
+                      <td class="w-7/12">
+                        <p class="text-black font-bold my-0 mb-1">
+                          Payment Type:
+                        </p>
+                        <p class="text-black my-0">American Express xxx1109</p>
+                      </td>
+                      <td class="w-5/12">
+                        <p class="text-black font-bold my-0 mb-1">
+                          Scheduled Delivery Date:
+                        </p>
+                        <p class="text-black my-0">10/08/2025</p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="w-full mt-3">
+                    <tr>
+                      <td class="w-7/12">
+                        <p class="text-black font-bold my-0 mb-1">
+                          Shipping Address:
+                        </p>
                         <p class="text-black my-0">Hilman Revanda</p>
                         <p class="text-black my-0">600 Montgomery St</p>
                         <p class="text-black my-0">San Fransisco, CA 94111</p>
                         <p class="text-black my-0">Canada</p>
-                      </div>
-                    </div>
-                    <div class="flex flex-col gap-1 w-[200px]">
-                      <p class="text-black font-bold my-0">Billing Address:</p>
-                      <div class="flex flex-col gap-1">
+                      </td>
+                      <td class="w-5/12">
+                        <p class="text-black font-bold my-0 mb-1">
+                          Billing Address:
+                        </p>
                         <p class="text-black my-0">Hilman Revanda</p>
                         <p class="text-black my-0">600 Montgomery St</p>
                         <p class="text-black my-0">San Fransisco, CA 94111</p>
                         <p class="text-black my-0">Canada</p>
-                      </div>
-                    </div>
-                  </div>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
-                <div
-                  class="flex items-center justify-center mx-auto my-14 gap-6"
-                >
-                  <x-button
-                    href="#"
-                    target="_blank"
-                    class="bg-[#302952] p-4 mx-auto uppercase no-underline text-white rounded-[6px]"
-                  >
-                    View Order Details
-                  </x-button>
-                  <x-button
-                    href="#"
-                    target="_blank"
-                    class="bg-[#302952] p-4 mx-auto uppercase no-underline text-white rounded-[6px]"
-                  >
-                    Track your order
-                  </x-button>
+                <div class="text-center my-20">
+                  <table class="mx-auto">
+                    <tr>
+                      <td class="px-4">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="bg-[#302952] p-4 uppercase no-underline text-white rounded-[6px] inline-block"
+                        >
+                          View Order Details
+                        </a>
+                      </td>
+                      <td class="px-4">
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="bg-[#302952] p-4 uppercase no-underline text-white rounded-[6px] inline-block"
+                        >
+                          Track your order
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
-                <div class="flex flex-col gap-5">
-                  <p class="text-black font-bold text-center my-0">
+                <div class="">
+                  <p class="text-black font-bold text-center my-0 mb-5">
                     Payment Summary
                   </p>
-                  <div class="flex flex-col w-full gap-3">
-                    <div
-                      class="flex items-center justify-between w-full pb-2"
-                      style="border-bottom: 1px solid #000"
-                    >
-                      <p class="font-light text-black my-0">ORDER SUBTOTAL</p>
-                      <p class="text-black my-0">$0.00</p>
-                    </div>
-                    <div
-                      class="flex items-center justify-between w-full pb-2"
-                      style="border-bottom: 1px solid #000"
-                    >
-                      <p class="font-light text-black my-0">EXPRESS SHIPPING</p>
-                      <p class="text-black my-0">COMPLEMENTARY</p>
-                    </div>
-                    <div
-                      class="flex items-center justify-between w-full pb-2"
-                      style="border-bottom: 1px solid #000"
-                    >
-                      <p class="font-light text-black my-0">Taxes</p>
-                      <p class="text-black my-0">$0.00</p>
-                    </div>
-                    <div
-                      class="flex items-center justify-between w-full pb-2"
-                      style="border-bottom: 1px solid #000"
-                    >
-                      <p class="font-light text-black my-0">Duties</p>
-                      <p class="text-black my-0">$0.00</p>
-                    </div>
-                    <div class="flex items-center justify-between w-full pb-2">
-                      <p class="font-bold text-black my-0">Order Total</p>
-                      <p class="text-black my-0 font-bold">$0.00</p>
-                    </div>
-                  </div>
+                  <table
+                    width="100%"
+                    cellpadding="0"
+                    cellspacing="0"
+                    role="presentation"
+                  >
+                    <tr>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          font-weight: 300;
+                          border-bottom: 1px solid #000;
+                        "
+                      >
+                        ORDER SUBTOTAL
+                      </td>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          text-align: right;
+                          border-bottom: 1px solid #000;
+                        "
+                      >
+                        $0.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          font-weight: 300;
+                          border-bottom: 1px solid #000;
+                        "
+                      >
+                        EXPRESS SHIPPING
+                      </td>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          text-align: right;
+                          border-bottom: 1px solid #000;
+                        "
+                      >
+                        COMPLEMENTARY
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          font-weight: 300;
+                          border-bottom: 1px solid #000;
+                        "
+                      >
+                        Taxes
+                      </td>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          text-align: right;
+                          border-bottom: 1px solid #000;
+                        "
+                      >
+                        $0.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          font-weight: 300;
+                          border-bottom: 1px solid #000;
+                        "
+                      >
+                        Duties
+                      </td>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          text-align: right;
+                          border-bottom: 1px solid #000;
+                        "
+                      >
+                        $0.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="padding: 8px 0; color: #000; font-weight: bold"
+                      >
+                        Order Total
+                      </td>
+                      <td
+                        style="
+                          padding: 8px 0;
+                          color: #000;
+                          text-align: right;
+                          font-weight: bold;
+                        "
+                      >
+                        $0.00
+                      </td>
+                    </tr>
+                  </table>
                 </div>
-                <div class="mt-14 flex flex-col gap-5">
-                  <p class="font-bold text-black text-center my-0">Items</p>
-                  <!-- Diamonds -->
-                  <div class="flex gap-8">
-                    <img
-                      src="product.webp"
-                      src-production="images/product.webp"
-                      width="70"
-                      alt="Products"
-                      class="aspect-square h-[150px] w-auto rounded-[6px]"
-                    />
-                    <div class="flex flex-col gap-2">
-                      <p class="text-black font-bold my-0">
-                        Diamond:
-                        <span class="font-normal pl-1"
-                          >4.59 Carat CUSHION BRILLIANT</span
+                <div class="mt-14">
+                  <p class="font-bold text-black text-center my-0 mb-5">
+                    Items
+                  </p>
+                  <table
+                    class="w-full my-8"
+                    cellpadding="0"
+                    cellspacing="0"
+                    style="border-collapse: collapse"
+                  >
+                    <!-- Diamond -->
+                    <tr>
+                      <td
+                        style="padding: 16px; vertical-align: top; width: 150px"
+                      >
+                        <img
+                          src="product.webp"
+                          width="150"
+                          alt="Product"
+                          style="border-radius: 6px; height: 150px; width: auto"
+                        />
+                      </td>
+                      <td style="padding: 16px; vertical-align: top">
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
                         >
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Type:
-                        <span class="font-normal pl-1">Natural Diamond</span>
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Certificate:
-                        <span class="font-normal pl-1">12345678</span>
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Color: <span class="font-normal pl-1">M</span>
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Clarity: <span class="font-normal pl-1">S12</span>
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Price: <span class="font-normal pl-1">$50.00</span>
-                      </p>
-                    </div>
-                  </div>
-                  <!-- Jewellery -->
-                  <div class="flex gap-8">
-                    <img
-                      src="jeweleries.png"
-                      src-production="images/jeweleries.png"
-                      width="70"
-                      alt="Products"
-                      class="aspect-square h-[150px] w-auto rounded-[6px]"
-                    />
-                    <div class="flex flex-col gap-2">
-                      <p class="text-black font-bold my-0">
-                        Reference:
-                        <span class="font-normal pl-1"
-                          >Clara Bracelet 7 CTW</span
+                          Diamond:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >4.59 Carat CUSHION BRILLIANT</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
                         >
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Metal:
-                        <span class="font-normal pl-1">18k Yellow Gold</span>
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Size:
-                        <span class="font-normal pl-1">6 In.</span>
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Diamond Color: <span class="font-normal pl-1">D-E</span>
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Diamond Clarity:
-                        <span class="font-normal pl-1">VS+</span>
-                      </p>
-                      <p class="text-black font-bold my-0">
-                        Price: <span class="font-normal pl-1">$50.00</span>
-                      </p>
-                    </div>
-                  </div>
+                          Type:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >Natural Diamond</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Certificate:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >12345678</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Color:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >M</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Clarity:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >S12</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Price:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >$50.00</span
+                          >
+                        </p>
+                      </td>
+                    </tr>
+
+                    <!-- Jewellery -->
+                    <tr>
+                      <td style="padding: 16px; vertical-align: top">
+                        <img
+                          src="jeweleries.png"
+                          width="150"
+                          alt="Jewelry"
+                          style="border-radius: 6px; height: 150px; width: auto"
+                        />
+                      </td>
+                      <td style="padding: 16px; vertical-align: top">
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Reference:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >Clara Bracelet 7 CTW</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Metal:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >18k Yellow Gold</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Size:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >6 In.</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Diamond Color:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >D-E</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Diamond Clarity:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >VS+</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            margin: 0;
+                            margin-bottom: 4px;
+                            font-weight: bold;
+                            color: black;
+                          "
+                        >
+                          Price:
+                          <span
+                            style="
+                              font-weight: normal;
+                              padding-left: 4px;
+                              color: black;
+                            "
+                            >$50.00</span
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
                 <x-divider class="bg-black" />
-                <div
-                  class="flex flex-col gap-4 mt-14 items-center justify-center"
-                >
-                  <p class="text-black font-bold">Contact Us</p>
-                  <div
-                    class="flex flex-col gap-[14px] items-center justify-center"
-                  >
+                <div class="mt-14 items-center justify-center">
+                  <p class="text-black font-bold mb-8 text-center">
+                    Contact Us
+                  </p>
+                  <div class="w-full mx-auto text-center">
                     <a
                       href="https://forms.diavaia.com/diavaiainc/form/GeneralConsultation/formperma/-g7VWBnjwXDylm3dHcEX-SUmJnrE3ybDMPi1CWWyj0Y"
                       target="_blank"
-                      class="bg-[#302952] py-[6px] no-underline text-white w-fit px-4 uppercase leading-7 rounded-[6px]]"
+                      class="bg-[#302952] py-3 no-underline text-white w-fit px-4 uppercase leading-7 rounded-[6px]"
                     >
                       BOOK A CONCIERGE APPOINTMENT
                     </a>
-                    <div class="flex items-center gap-2 max-w-[311px]">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="stroke-black"
-                      >
-                        <path
-                          d="M4.74 14.3691L6.694 12.9821C7.22072 12.6032 7.81253 12.3242 8.44 12.1591C9.172 11.9641 9.5 11.5641 9.5 10.7111C9.5 8.54609 14.5 8.31609 14.5 10.7111C14.5 11.5641 14.828 11.9641 15.56 12.1581C16.202 12.3301 16.76 12.5931 17.306 12.9821L19.26 14.3681C20.143 14.9961 20.555 15.2991 20.784 15.7821C21 16.2361 21 16.7681 21 17.8321C21 19.7461 21 20.7031 20.464 21.3161C19.815 22.0591 18.128 21.9961 17.092 21.9961H6.908C5.872 21.9961 4.219 22.0991 3.536 21.3161C3 20.7031 3 19.7461 3 17.8321C3 16.7681 3 16.2361 3.216 15.7821C3.446 15.3001 3.856 14.9961 4.74 14.3681"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M6.96017 3.6975C5.64217 4.0735 4.69417 4.5405 3.82617 5.1045C2.45317 5.9965 1.86417 7.6035 2.02617 9.1545C2.09417 9.8105 2.62117 10.1245 3.23117 9.9545C3.69517 9.8245 4.15917 9.6995 4.62017 9.5635C5.96717 9.1635 6.28417 8.6775 6.47117 7.2985L6.96017 3.6975ZM6.96017 3.6975C10.2192 2.7675 13.7812 2.7675 17.0402 3.6975M17.0402 3.6975C18.3582 4.0735 19.3062 4.5405 20.1742 5.1045C21.5472 5.9965 22.1362 7.6035 21.9742 9.1545C21.9062 9.8105 21.3792 10.1245 20.7692 9.9545C20.3062 9.8245 19.8412 9.6995 19.3802 9.5635C18.0332 9.1635 17.7162 8.6775 17.5292 7.2985L17.0402 3.6975ZM14.0002 16.9995C14.0002 17.5299 13.7895 18.0386 13.4144 18.4137C13.0393 18.7888 12.5306 18.9995 12.0002 18.9995C11.4697 18.9995 10.961 18.7888 10.586 18.4137C10.2109 18.0386 10.0002 17.5299 10.0002 16.9995C10.0002 16.4691 10.2109 15.9604 10.586 15.5853C10.961 15.2102 11.4697 14.9995 12.0002 14.9995C12.5306 14.9995 13.0393 15.2102 13.4144 15.5853C13.7895 15.9604 14.0002 16.4691 14.0002 16.9995Z"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                      </svg>
-                      <p class="font-light text-black my-0">USA/CAN</p>
-                      <p class="font-light text-black my-0">+1(844)806-6616</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <svg
-                        width="22"
-                        height="20"
-                        viewBox="0 0 22 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="stroke-black"
-                      >
-                        <path
-                          d="M6 6.5L8.942 8.24C10.657 9.254 11.342 9.254 13.058 8.24L16 6.5"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M1.01679 11.4756C1.08179 14.5406 1.11479 16.0736 2.24579 17.2086C3.37679 18.3446 4.95079 18.3836 8.09979 18.4626C10.0398 18.5126 11.9618 18.5126 13.9018 18.4626C17.0508 18.3836 18.6248 18.3446 19.7558 17.2086C20.8868 16.0736 20.9198 14.5406 20.9858 11.4756C21.0058 10.4896 21.0058 9.5096 20.9858 8.5236C20.9198 5.4586 20.8868 3.9256 19.7558 2.7906C18.6248 1.6546 17.0508 1.6156 13.9018 1.5366C11.9681 1.4878 10.0335 1.4878 8.09979 1.5366C4.95079 1.6156 3.37679 1.6546 2.24579 2.7906C1.11479 3.9256 1.08179 5.4586 1.01579 8.5236C0.994737 9.50748 0.995737 10.4917 1.01679 11.4756Z"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                      </svg>
-                      <p class="font-light text-black my-0">
-                        SUPPORT@DIAVAIA.COM
-                      </p>
-                    </div>
-                    <div class="flex items-center gap-6">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="stroke-black"
-                      >
-                        <path
-                          d="M2.5 12C2.5 7.522 2.5 5.282 3.891 3.891C5.282 2.5 7.521 2.5 12 2.5C16.478 2.5 18.718 2.5 20.109 3.891C21.5 5.282 21.5 7.521 21.5 12C21.5 16.478 21.5 18.718 20.109 20.109C18.718 21.5 16.479 21.5 12 21.5C7.522 21.5 5.282 21.5 3.891 20.109C2.5 18.718 2.5 16.479 2.5 12Z"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M16.927 8.02734H13.982C13.4805 8.02733 12.9994 8.22559 12.6435 8.57888C12.2875 8.93218 12.0857 9.41186 12.082 9.91334L11.996 21.4283M10.082 14.0033H14.885"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                      </svg>
-                      <svg
-                        width="22"
-                        height="22"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="stroke-black"
-                      >
-                        <path
-                          d="M1.5 11C1.5 6.522 1.5 4.282 2.891 2.891C4.282 1.5 6.521 1.5 11 1.5C15.478 1.5 17.718 1.5 19.109 2.891C20.5 4.282 20.5 6.521 20.5 11C20.5 15.478 20.5 17.718 19.109 19.109C17.718 20.5 15.479 20.5 11 20.5C6.522 20.5 4.282 20.5 2.891 19.109C1.5 17.718 1.5 15.479 1.5 11Z"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M16.508 5.5H16.498M15.5 11C15.5 12.1935 15.0259 13.3381 14.182 14.182C13.3381 15.0259 12.1935 15.5 11 15.5C9.80653 15.5 8.66193 15.0259 7.81802 14.182C6.97411 13.3381 6.5 12.1935 6.5 11C6.5 9.80653 6.97411 8.66193 7.81802 7.81802C8.66193 6.97411 9.80653 6.5 11 6.5C12.1935 6.5 13.3381 6.97411 14.182 7.81802C15.0259 8.66193 15.5 9.80653 15.5 11Z"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                      </svg>
-                      <svg
-                        width="22"
-                        height="22"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="stroke-black"
-                      >
-                        <path
-                          d="M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 12.379 1.28 13.693 1.784 14.888C2.063 15.548 2.202 15.878 2.22 16.128C2.237 16.378 2.163 16.652 2.016 17.201L1 21L4.799 19.984C5.348 19.837 5.622 19.764 5.872 19.78C6.122 19.798 6.452 19.937 7.112 20.216C8.34266 20.7343 9.66465 21.0009 11 21Z"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M7.58817 11.377L8.45917 10.296C8.82617 9.84 9.27917 9.416 9.31617 8.808C9.32417 8.655 9.21617 7.967 9.00117 6.59C8.91617 6.049 8.41017 6 7.97317 6C7.40317 6 7.11817 6 6.83517 6.13C6.47717 6.293 6.11017 6.752 6.02917 7.137C5.96517 7.442 6.01317 7.652 6.10817 8.072C6.51017 9.855 7.45517 11.616 8.91917 13.081C10.3842 14.545 12.1452 15.49 13.9292 15.892C14.3492 15.987 14.5582 16.035 14.8632 15.971C15.2482 15.891 15.7072 15.523 15.8712 15.165C16.0002 14.882 16.0002 14.597 16.0002 14.027C16.0002 13.589 15.9512 13.084 15.4102 12.999C14.0332 12.783 13.3452 12.676 13.1922 12.684C12.5852 12.72 12.1602 13.174 11.7042 13.541L10.6232 14.411"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                      </svg>
-                      <svg
-                        width="22"
-                        height="22"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="stroke-black"
-                      >
-                        <path
-                          d="M1.5 11C1.5 6.522 1.5 4.282 2.891 2.891C4.282 1.5 6.521 1.5 11 1.5C15.478 1.5 17.718 1.5 19.109 2.891C20.5 4.282 20.5 6.521 20.5 11C20.5 15.478 20.5 17.718 19.109 19.109C17.718 20.5 15.479 20.5 11 20.5C6.522 20.5 4.282 20.5 2.891 19.109C1.5 17.718 1.5 15.479 1.5 11Z"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M9.53589 10.0075C8.71589 9.89147 6.84589 10.0825 5.92989 11.7775C5.01389 13.4725 5.93689 15.2365 6.51389 15.9065C7.08289 16.5335 8.89189 17.7205 10.8109 16.5615C11.2869 16.2745 11.8799 16.0595 12.5519 13.8145L12.4739 4.98047C12.3439 5.95347 13.4189 8.23547 16.4779 8.50547"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                      </svg>
-                    </div>
+                    <table
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      style="margin-top: 16px; width: 100%; text-align: center"
+                    >
+                      <tr>
+                        <td align="center">
+                          <table
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="display: inline-table"
+                          >
+                            <tr>
+                              <td
+                                style="
+                                  vertical-align: middle;
+                                  padding-right: 4px;
+                                "
+                              >
+                                <svg
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  style="display: block"
+                                >
+                                  <path
+                                    d="M4.74 14.3691L6.694 12.9821C7.22072 12.6032 7.81253 12.3242 8.44 12.1591C9.172 11.9641 9.5 11.5641 9.5 10.7111C9.5 8.54609 14.5 8.31609 14.5 10.7111C14.5 11.5641 14.828 11.9641 15.56 12.1581C16.202 12.3301 16.76 12.5931 17.306 12.9821L19.26 14.3681C20.143 14.9961 20.555 15.2991 20.784 15.7821C21 16.2361 21 16.7681 21 17.8321C21 19.7461 21 20.7031 20.464 21.3161C19.815 22.0591 18.128 21.9961 17.092 21.9961H6.908C5.872 21.9961 4.219 22.0991 3.536 21.3161C3 20.7031 3 19.7461 3 17.8321C3 16.7681 3 16.2361 3.216 15.7821C3.446 15.3001 3.856 14.9961 4.74 14.3681"
+                                    stroke="#000000"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M6.96017 3.6975C5.64217 4.0735 4.69417 4.5405 3.82617 5.1045C2.45317 5.9965 1.86417 7.6035 2.02617 9.1545C2.09417 9.8105 2.62117 10.1245 3.23117 9.9545C3.69517 9.8245 4.15917 9.6995 4.62017 9.5635C5.96717 9.1635 6.28417 8.6775 6.47117 7.2985L6.96017 3.6975ZM6.96017 3.6975C10.2192 2.7675 13.7812 2.7675 17.0402 3.6975M17.0402 3.6975C18.3582 4.0735 19.3062 4.5405 20.1742 5.1045C21.5472 5.9965 22.1362 7.6035 21.9742 9.1545C21.9062 9.8105 21.3792 10.1245 20.7692 9.9545C20.3062 9.8245 19.8412 9.6995 19.3802 9.5635C18.0332 9.1635 17.7162 8.6775 17.5292 7.2985L17.0402 3.6975ZM14.0002 16.9995C14.0002 17.5299 13.7895 18.0386 13.4144 18.4137C13.0393 18.7888 12.5306 18.9995 12.0002 18.9995C11.4697 18.9995 10.961 18.7888 10.586 18.4137C10.2109 18.0386 10.0002 17.5299 10.0002 16.9995C10.0002 16.4691 10.2109 15.9604 10.586 15.5853C10.961 15.2102 11.4697 14.9995 12.0002 14.9995C12.5306 14.9995 13.0393 15.2102 13.4144 15.5853C13.7895 15.9604 14.0002 16.4691 14.0002 16.9995Z"
+                                    stroke="#000000"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </td>
+                              <td style="vertical-align: middle">
+                                <p
+                                  class="font-light"
+                                  style="margin: 0; color: #000"
+                                >
+                                  USA/CAN +1(844)806-6616
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      style="margin-top: 16px; width: 100%; text-align: center"
+                    >
+                      <tr>
+                        <td align="center">
+                          <table
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="display: inline-table"
+                          >
+                            <tr>
+                              <td
+                                style="
+                                  vertical-align: middle;
+                                  padding-right: 4px;
+                                "
+                              >
+                                <svg
+                                  width="22"
+                                  height="20"
+                                  viewBox="0 0 22 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="stroke-black"
+                                >
+                                  <path
+                                    d="M6 6.5L8.942 8.24C10.657 9.254 11.342 9.254 13.058 8.24L16 6.5"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M1.01679 11.4756C1.08179 14.5406 1.11479 16.0736 2.24579 17.2086C3.37679 18.3446 4.95079 18.3836 8.09979 18.4626C10.0398 18.5126 11.9618 18.5126 13.9018 18.4626C17.0508 18.3836 18.6248 18.3446 19.7558 17.2086C20.8868 16.0736 20.9198 14.5406 20.9858 11.4756C21.0058 10.4896 21.0058 9.5096 20.9858 8.5236C20.9198 5.4586 20.8868 3.9256 19.7558 2.7906C18.6248 1.6546 17.0508 1.6156 13.9018 1.5366C11.9681 1.4878 10.0335 1.4878 8.09979 1.5366C4.95079 1.6156 3.37679 1.6546 2.24579 2.7906C1.11479 3.9256 1.08179 5.4586 1.01579 8.5236C0.994737 9.50748 0.995737 10.4917 1.01679 11.4756Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </td>
+                              <td style="vertical-align: middle">
+                                <p
+                                  class="font-light"
+                                  style="margin: 0; color: #000"
+                                >
+                                  SUPPORT@DIAVAIA.COM
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      style="margin-top: 16px; width: 100%; text-align: center"
+                    >
+                      <tr>
+                        <td align="center">
+                          <table
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="display: inline-table"
+                          >
+                            <tr>
+                              <td
+                                style="
+                                  vertical-align: middle;
+                                  padding-right: 4px;
+                                "
+                              >
+                                <svg
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="stroke-black pr-1"
+                                >
+                                  <path
+                                    d="M2.5 12C2.5 7.522 2.5 5.282 3.891 3.891C5.282 2.5 7.521 2.5 12 2.5C16.478 2.5 18.718 2.5 20.109 3.891C21.5 5.282 21.5 7.521 21.5 12C21.5 16.478 21.5 18.718 20.109 20.109C18.718 21.5 16.479 21.5 12 21.5C7.522 21.5 5.282 21.5 3.891 20.109C2.5 18.718 2.5 16.479 2.5 12Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M16.927 8.02734H13.982C13.4805 8.02733 12.9994 8.22559 12.6435 8.57888C12.2875 8.93218 12.0857 9.41186 12.082 9.91334L11.996 21.4283M10.082 14.0033H14.885"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </td>
+                              <td
+                                style="
+                                  vertical-align: middle;
+                                  padding-right: 4px;
+                                "
+                              >
+                                <svg
+                                  width="22"
+                                  height="22"
+                                  viewBox="0 0 22 22"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="stroke-black pr-1"
+                                >
+                                  <path
+                                    d="M1.5 11C1.5 6.522 1.5 4.282 2.891 2.891C4.282 1.5 6.521 1.5 11 1.5C15.478 1.5 17.718 1.5 19.109 2.891C20.5 4.282 20.5 6.521 20.5 11C20.5 15.478 20.5 17.718 19.109 19.109C17.718 20.5 15.479 20.5 11 20.5C6.522 20.5 4.282 20.5 2.891 19.109C1.5 17.718 1.5 15.479 1.5 11Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M16.508 5.5H16.498M15.5 11C15.5 12.1935 15.0259 13.3381 14.182 14.182C13.3381 15.0259 12.1935 15.5 11 15.5C9.80653 15.5 8.66193 15.0259 7.81802 14.182C6.97411 13.3381 6.5 12.1935 6.5 11C6.5 9.80653 6.97411 8.66193 7.81802 7.81802C8.66193 6.97411 9.80653 6.5 11 6.5C12.1935 6.5 13.3381 6.97411 14.182 7.81802C15.0259 8.66193 15.5 9.80653 15.5 11Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </td>
+                              <td
+                                style="
+                                  vertical-align: middle;
+                                  padding-right: 4px;
+                                "
+                              >
+                                <svg
+                                  width="22"
+                                  height="22"
+                                  viewBox="0 0 22 22"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="stroke-black pr-1"
+                                >
+                                  <path
+                                    d="M11 21C16.523 21 21 16.523 21 11C21 5.477 16.523 1 11 1C5.477 1 1 5.477 1 11C1 12.379 1.28 13.693 1.784 14.888C2.063 15.548 2.202 15.878 2.22 16.128C2.237 16.378 2.163 16.652 2.016 17.201L1 21L4.799 19.984C5.348 19.837 5.622 19.764 5.872 19.78C6.122 19.798 6.452 19.937 7.112 20.216C8.34266 20.7343 9.66465 21.0009 11 21Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M7.58817 11.377L8.45917 10.296C8.82617 9.84 9.27917 9.416 9.31617 8.808C9.32417 8.655 9.21617 7.967 9.00117 6.59C8.91617 6.049 8.41017 6 7.97317 6C7.40317 6 7.11817 6 6.83517 6.13C6.47717 6.293 6.11017 6.752 6.02917 7.137C5.96517 7.442 6.01317 7.652 6.10817 8.072C6.51017 9.855 7.45517 11.616 8.91917 13.081C10.3842 14.545 12.1452 15.49 13.9292 15.892C14.3492 15.987 14.5582 16.035 14.8632 15.971C15.2482 15.891 15.7072 15.523 15.8712 15.165C16.0002 14.882 16.0002 14.597 16.0002 14.027C16.0002 13.589 15.9512 13.084 15.4102 12.999C14.0332 12.783 13.3452 12.676 13.1922 12.684C12.5852 12.72 12.1602 13.174 11.7042 13.541L10.6232 14.411"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </td>
+                              <td
+                                style="
+                                  vertical-align: middle;
+                                  padding-right: 4px;
+                                "
+                              >
+                                <svg
+                                  width="22"
+                                  height="22"
+                                  viewBox="0 0 22 22"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="stroke-black pr-1"
+                                >
+                                  <path
+                                    d="M1.5 11C1.5 6.522 1.5 4.282 2.891 2.891C4.282 1.5 6.521 1.5 11 1.5C15.478 1.5 17.718 1.5 19.109 2.891C20.5 4.282 20.5 6.521 20.5 11C20.5 15.478 20.5 17.718 19.109 19.109C17.718 20.5 15.479 20.5 11 20.5C6.522 20.5 4.282 20.5 2.891 19.109C1.5 17.718 1.5 15.479 1.5 11Z"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M9.53589 10.0075C8.71589 9.89147 6.84589 10.0825 5.92989 11.7775C5.01389 13.4725 5.93689 15.2365 6.51389 15.9065C7.08289 16.5335 8.89189 17.7205 10.8109 16.5615C11.2869 16.2745 11.8799 16.0595 12.5519 13.8145L12.4739 4.98047C12.3439 5.95347 13.4189 8.23547 16.4779 8.50547"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
               </td>
